@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>작품</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <!-- 왼쪽 사이드바 -->
+    <nav class="sidebar">
+        <ul>
+            <li><a href="{{ url_for('about_page') }}">작가소개</a></li>
+            <li><a href="{{ url_for('artworks_page') }}">작품</a></li>
+            <li><a href="{{ url_for('exhibitions_page') }}">전시</a></li>
+            <li><a href="{{ url_for('archive_page') }}">아카이브</a></li>
+        </ul>
+    </nav>
+
+    <!-- 작품 페이지 (분류명) -->
+    <div class="content">
+        <h1 class="category-title">작품</h1> <!-- ✅ 페이지 상단에 카테고리명 표시 -->
+
+        <!-- 작품 리스트 -->
+        <div class="artwork-list">
+            {% for artwork in artworks %}
+            <div class="artwork-container">
+                <!-- 작품 이미지 -->
+                <img src="{{ url_for('static', filename=artwork.image) }}" alt="{{ artwork.title }}" class="artwork-image">
+                
+                <!-- 작품 설명 -->
+                <div class="artwork-details">
+                    <h3>{{ artwork.title }}</h3>
+                    <p><strong>제작년도:</strong> {{ artwork.year }}</p>
+                    <p><strong>크기:</strong> {{ artwork.size }}</p>
+                    <p><strong>재료:</strong> {{ artwork.materials }}</p>
+                    <p>{{ artwork.description }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+</body>
+</html>

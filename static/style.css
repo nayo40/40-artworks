@@ -1,0 +1,140 @@
+/* 전체 페이지 레이아웃 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #439fb3;
+    color: #000000;
+    margin: 1;
+    padding: 1;
+    display: flex;
+}
+
+/* 왼쪽 사이드바 (메뉴) */
+.sidebar {
+    width: 80px;
+    background-color: #412f45;
+    padding: 10px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+    background-color: transparent; /* 배경색 제거 */
+}
+/* 사이드바 메뉴 스타일 */
+.sidebar ul {
+    list-style-type: none; /* 왼쪽 점 제거 */
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 3px;
+    padding: 0;
+}
+
+/* 기본 상태 */
+.sidebar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline; /* 글씨 크기만큼만 반전되도록 변경 */
+    padding: 0; /* 패딩 최소화 */
+    transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+/* 마우스 오버 시 반전 효과 */
+.sidebar ul li a:hover {
+    background: #ce3477;
+    color: #fff;
+    padding: 2px 3px;/* 반전되는 박스를 더 작게 조정 */
+    border-radius: 0; /* 둥근 모서리 제거 → 완전 각진 네모 */
+}
+
+/* 콘텐츠 레이아웃 */
+.content {
+    margin-left: 140px;
+    padding: 20px;
+    width: calc(100% - 140px);
+}
+
+/* 각 섹션 스타일 */
+section {
+    padding: 50px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* 작품 리스트 */
+.artwork-list {
+    display: flex;
+    flex-direction: column; /* 세로 정렬 */
+    gap: 80px; /* 카드 사이 간격 */
+    align-items: center; /* 가운데 정렬 */
+}
+.category-title {
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #143137;
+}
+/* 작품 카드 전체 구조 */
+.artwork-container {
+    width: 60%;
+    text-align: left;
+}
+/* 작품 이미지 */
+.artwork-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 0;
+}
+/* 작품 설명 */
+.artwork-details {
+    margin-top: 20px;
+}
+
+/* 작품 카드 스타일 */
+.artwork-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 15px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%; /* 기본적으로 화면 너비의 90% 차지 */
+    max-width: 900px; /* ✅ 최대 너비 조정 */
+    transition: width 0.3s ease-in-out; /* 부드러운 크기 변화 */
+}
+
+/* 작품 카드 이미지 스타일 */
+.artwork-card img {
+    width: 100%; /* 카드 내부에서 꽉 차도록 설정 */
+    height: auto;
+    max-height: none; /* 기존 제한 해제 (너비에 맞춰 높이 자동 조정) */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 반응형 웹 (모바일 최적화) */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100px;
+        padding: 10px;
+    }
+
+    .sidebar ul li a {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .content {
+        margin-left: 120px;
+        width: calc(100% - 120px);
+    }
+
+    .artwork-list {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}

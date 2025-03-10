@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>전시</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <nav class="sidebar">
+        <ul>
+            <li><a href="{{ url_for('about_page') }}">작가소개</a></li>
+            <li><a href="{{ url_for('artworks_page') }}">작품</a></li>
+            <li><a href="{{ url_for('exhibitions_page') }}">전시</a></li>
+            <li><a href="{{ url_for('archive_page') }}">아카이브</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <h2>전시</h2>
+        <p>여기에 전시 관련 내용을 입력하세요.</p>
+    </div>
+
+</body>
+</html>

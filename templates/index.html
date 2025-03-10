@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>내 작품 소개</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!--왼쪽 사이드바 (메뉴)-->
+    <nav class="sidebar">
+        <ul>
+            <li><a href="{{ url_for('about_page') }}">작가소개</a></li>
+            <li><a href="{{ url_for('artworks_page') }}" >작품</a></li>
+            <li><a href="{{ url_for('exhibitions_page') }}">전시</a></li>
+            <li><a href="{{ url_for('archive_page') }}">아카이브</a></li>
+        </ul>
+    </nav>
+
+    <!-- 메인 콘텐츠-->
+     <div class="content">
+        <h2>메인 페이지</h2>
+        <p>이곳은 메인페이지입니다.</p>
+        
+    </div>
+
+</body>
+</html>
