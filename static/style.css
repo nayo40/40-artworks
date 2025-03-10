@@ -126,29 +126,29 @@ section {
 /* 반응형 웹 (모바일 최적화) */
 @media (max-width: 768px) {
     .sidebar {
-        width: 70px;
-        min-width: 70px;
-        max-width: 70px;
+        width: 70px !important;
+        min-width: 70px !important;
+        max-width: 70px !important;
         padding: 10px; /* 왼쪽 여백 */
     }
 
     .sidebar ul li a {
-        font-size: 14px;
-        padding: 5px;
+        font-size: 14px !important ;
+        padding: 5px!important ;
     }
 
     .content {
-        margin-left: 70px; /* 모바일에서 사이드바 크기 */
-        width: calc(100% - 70px);
+        margin-left: 70px !important ; /* 모바일에서 사이드바 크기 */
+        width: calc(100% - 70px) !important ;
     }
 
     .artwork-container,
     .about-container,
     .exhibitions-container,
     .archive-container {
-        width: 98%; /* 모바일에서도 가로폭을 더 넓히기 */
-        max-width: none;
-        margin: 0 auto;
+        width: 98% !important ; /* 모바일에서도 가로폭을 더 넓히기 */
+        max-width: none !important ;
+        margin: 0 auto !important ;
     }
 
     /* 작품 카드 가로폭 조정 */
@@ -156,8 +156,8 @@ section {
     .about-card,
     .exhibitions-card,
     .archive-card {
-        width: 98%; /* 모바일에서도 가로폭이 너무 좁아지지 않도록 설정 */
-        max-width: none;
+        width: 98% !important ; /* 모바일에서도 가로폭이 너무 좁아지지 않도록 설정 */
+        max-width: none !important ;
     }
 
     .artwork-list,
