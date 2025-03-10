@@ -37,9 +37,9 @@ body {
 .sidebar ul li a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 19px;
-    display: inline; /* 글씨 크기만큼만 반전되도록 변경 */
-    padding: 0; /* 패딩 최소화 */
+    font-size: 14px;
+    display: inline-block; /* 글씨 크기만큼만 반전되도록 변경 */
+    padding: 2px 3px; /* 패딩 최소화 */
     transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
@@ -81,7 +81,7 @@ section {
 }
 /* 작품 카드 전체 구조 */
 .artwork-container {
-    width: 90%;
+    width: 95%;
     max-width: 1200px;
     text-align: left;
     margin: 0 auto;
@@ -125,29 +125,29 @@ section {
 /* 반응형 웹 (모바일 최적화) */
 @media (max-width: 768px) {
     .sidebar {
-        width: 70px;
-        max-width: 70px;
+        width: 80px;
+        max-width: 80px;
         padding: 10px; /* 왼쪽 여백 */
     }
 
     .sidebar ul li a {
         font-size: 14px;
-        padding: 5px;
+        padding: 4px;
     }
 
     .content {
-        margin-left: 100px; /* 모바일에서 사이드바 크기 */
-        width: calc(100% - 100px);
+        margin-left: 80px; /* 모바일에서 사이드바 크기 */
+        width: calc(100% - 80px);
     }
 
     .artwork-container {
-        width: 95%; /* 모바일에서도 가로폭을 더 넓히기 */
+        width: 98%; /* 모바일에서도 가로폭을 더 넓히기 */
         max-width: none;
     }
 
     /* 작품 카드 가로폭 조정 */
     .artwork-card {
-        width: 95%; /* 모바일에서도 가로폭이 너무 좁아지지 않도록 설정 */
+        width: 98%; /* 모바일에서도 가로폭이 너무 좁아지지 않도록 설정 */
         max-width: none;
     }
 
