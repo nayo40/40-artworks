@@ -11,6 +11,7 @@ body {
 /* 왼쪽 사이드바 (메뉴) */
 .sidebar {
     width: 80px;
+    min-width: 80px;
     background-color: #412f45;
     padding: 10px;
     height: 100vh;
@@ -120,8 +121,8 @@ section {
 /* 반응형 웹 (모바일 최적화) */
 @media (max-width: 768px) {
     .sidebar {
-        width: 95%;
-        max-width: none;
+        width: 100px;
+        max-width: 100px;
         padding: 10px;
     }
 
@@ -131,8 +132,13 @@ section {
     }
 
     .content {
-        margin-left: 120px;
-        width: calc(100% - 120px);
+        margin-left: 100px;
+        width: calc(100% - 100px);
+    }
+    /* 작품 카드 가로폭 조정 */
+    .artwork-card {
+        width: 95%; /* 모바일에서도 가로폭이 너무 좁아지지 않도록 설정 */
+        max-width: none;
     }
 
     .artwork-list {
