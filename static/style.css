@@ -134,7 +134,7 @@ section {
 
     .sidebar ul li a {
         font-size: 14px;
-        padding: 4px;
+        padding: 5px;
     }
 
     .content {
@@ -142,18 +142,28 @@ section {
         width: calc(100% - 70px);
     }
 
-    .artwork-container {
+    .artwork-container,
+    .about-container,
+    .exhibitions-container,
+    .archive-container {
         width: 98%; /* 모바일에서도 가로폭을 더 넓히기 */
         max-width: none;
+        margin: 0 auto;
     }
 
     /* 작품 카드 가로폭 조정 */
-    .artwork-card {
+    .artwork-card,
+    .about-card,
+    .exhibitions-card,
+    .archive-card {
         width: 98%; /* 모바일에서도 가로폭이 너무 좁아지지 않도록 설정 */
         max-width: none;
     }
 
-    .artwork-list {
+    .artwork-list,
+    .about-list,
+    .exhibitions-list,
+    .archive-list {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 }
