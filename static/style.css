@@ -36,7 +36,7 @@ body {
 .sidebar ul li a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 19px;
     display: inline; /* 글씨 크기만큼만 반전되도록 변경 */
     padding: 0; /* 패딩 최소화 */
     transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -104,7 +104,7 @@ section {
     text-align: left;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 90%; /* 기본적으로 화면 너비의 90% 차지 */
-    max-width: 900px; /* ✅ 최대 너비 조정 */
+    max-width: 1200px; /* ✅ 최대 너비 조정 */
     transition: width 0.3s ease-in-out; /* 부드러운 크기 변화 */
 }
 
@@ -120,7 +120,8 @@ section {
 /* 반응형 웹 (모바일 최적화) */
 @media (max-width: 768px) {
     .sidebar {
-        width: 100px;
+        width: 95%;
+        max-width: none;
         padding: 10px;
     }
 
