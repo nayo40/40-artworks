@@ -126,9 +126,9 @@ section {
 /* 반응형 웹 (모바일 최적화) */
 @media (max-width: 768px) {
     .sidebar {
-        width: 80px;
-        min-width: 80px;
-        max-width: 80px;
+        width: 70px;
+        min-width: 70px;
+        max-width: 70px;
         padding: 10px; /* 왼쪽 여백 */
     }
 
@@ -138,8 +138,8 @@ section {
     }
 
     .content {
-        margin-left: 80px; /* 모바일에서 사이드바 크기 */
-        width: calc(100% - 80px);
+        margin-left: 70px; /* 모바일에서 사이드바 크기 */
+        width: calc(100% - 70px);
     }
 
     .artwork-container {
