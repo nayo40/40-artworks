@@ -39,7 +39,7 @@ body {
     color: #000000;
     text-decoration: none;
     font-family: "돋움", Dotum, sans-serif;
-    font-size: 30px;
+    font-size: 40px;
     display: inline-block; /* 글씨 크기만큼만 반전되도록 변경 */
     padding: 2px 3px; /* 패딩 최소화 */
     transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -55,9 +55,9 @@ body {
 
 /* 콘텐츠 레이아웃 */
 .content {
-    margin-left: 100px;
+    margin-left: 190px;
     padding: 20px;
-    width: calc(100% - 100px);
+    width: calc(100% - 190px);
     max-width: none;
 }
 
@@ -127,7 +127,7 @@ section {
 /* 반응형 웹 (모바일 최적화) */
 @media (max-width: 768px) {
     .sidebar {
-        width: 70px !important;
+        width: 100px !important;
         min-width: 70px !important;
         max-width: 70px !important;
         padding: 10px; /* 왼쪽 여백 */
@@ -139,8 +139,8 @@ section {
     }
 
     .content, .about-content, .exhibitions-content, .archive-content{
-        margin-left: 70px !important ; /* 모바일에서 사이드바 크기 */
-        width: calc(100% - 70px) !important ;
+        margin-left: 110px !important ; /* 모바일에서 사이드바 크기 */
+        width: calc(100% - 110px) !important ;
     }
 
     .artwork-container,
