@@ -1,7 +1,7 @@
 /* 전체 페이지 레이아웃 */
 body {
     font-family: Arial, sans-serif;
-    background-color: #439fb3;
+    background-color: #eeeeee;
     color: #000000;
     margin: 1;
     padding: 1;
@@ -36,9 +36,10 @@ body {
 
 /* 기본 상태 */
 .sidebar ul li a {
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
-    font-size: 14px;
+    font-family: "돋움", Dotum, sans-serif;
+    font-size: 30px;
     display: inline-block; /* 글씨 크기만큼만 반전되도록 변경 */
     padding: 2px 3px; /* 패딩 최소화 */
     transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -137,7 +138,7 @@ section {
         padding: 5px!important ;
     }
 
-    .content {
+    .content, .about-content, .exhibitions-content, .archive-content{
         margin-left: 70px !important ; /* 모바일에서 사이드바 크기 */
         width: calc(100% - 70px) !important ;
     }
