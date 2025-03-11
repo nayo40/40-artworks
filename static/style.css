@@ -55,9 +55,9 @@ body {
 
 /* 콘텐츠 레이아웃 */
 .content {
-    margin-left: 190px;
+    margin-left: 200px;
     padding: 20px;
-    width: calc(100% - 190px);
+    width: calc(100% - 200px);
     max-width: none;
 }
 
