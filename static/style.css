@@ -77,7 +77,7 @@ section {
 .category-title {
     font-size: 30px;
     font-weight: normal;
-    text-align: center;
+    text-align: left;
     margin-bottom: 20px;
     color: #143137;
 }
@@ -132,15 +132,19 @@ section {
         max-width: 70px !important;
         padding: 10px; /* 왼쪽 여백 */
     }
+    .sidebar ul li {
+        margin-bottom: 2px; /* 세로 간격 줄이기 */
+    }
 
     .sidebar ul li a {
         font-size: 22px !important ;
-        padding: 10px!important ;
+        padding: 20px !important ;
+        
     }
 
     .content, .about-content, .exhibitions-content, .archive-content{
-        margin-left: 110px !important ; /* 모바일에서 사이드바 크기 */
-        width: calc(100% - 110px) !important ;
+        margin-left: 130px !important ; /* 모바일에서 사이드바 크기 */
+        width: calc(100% - 130px) !important ;
     }
 
     .artwork-container,
